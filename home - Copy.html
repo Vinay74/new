@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link href="css/custom.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="navbar-collpse">
+                    <span class="sr-only">Toggle Navbar</span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Hoblist</a>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="http://hoblist.com">Home</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="row">
+                <div class="jumbotron text-center">
+                    <p>Welcome to Hoblist</p>
+                    <marquee>Hoblist is an online community FOR MOVIE BUFFS, OF ALL AGES</marquee>
+                    <button type=button class="btn btn-sucess"><a href="http://hoblist.com">WatchNow</a></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" style="border:2px solid">
+            <!-- <div class="row">
+                <div class="col-md-3">
+                    <img src="images/Indra_2003.jpg">
+                </div>
+                <div class="col-md-7">
+                    <h2>INDRA</h2>
+                    <p  align="justify">Indra is a Telugu language action drama film directed by B. Gopal. It stars Chiranjeevi, Aarti Agarwal and Sonali Bendre in the lead roles. The film was released on 24 July 2002 and opened to highly positive reviews from critics as well as from the audiences. This film gave a blockbuster movie of Chiranjeevi’s career, later it was dubbed into Hindi and Tamil as Indra - The Tiger and Indran respectively. The film was remade in Bengali as Dada and Bangladeshi as Sultan by Manna.
+
+                        This film was the highest grossing South Indian film which surpassed the collections of Indian (1996 film) and Padayappa. Indra was never touched by the Tamil film Chandramukhi(2005). It took until 4 years for another Telugu film, Pokiri (2006 film), to surpass Indra. It was declared an Blockbuster at the box-office</p>
+                    <p>
+                       <i class="glyphicon glyphicon-star"></i>
+                       <i class="glyphicon glyphicon-star"></i>
+                       <i class="glyphicon glyphicon-star"></i>
+                       <i class="glyphicon glyphicon-star"></i>
+                       <i class="glyphicon glyphicon-star"></i>
+                    </p>
+                </div>
+                <div class="col-md-2"><br/><br/><br/>
+                    <h5><b>Hero:</b>Chiranjivi</h5>
+                    <h5><b>Director:</b>B Gopal</h5>
+                    <h5><b>Music By:</b>Mani Sharma</h5>
+                    <button type=button class="btn btn-danger" >
+                        <center><a href="https://www.youtube.com/watch?v=LorbrQ-8RUg">WatchNow</a></center>
+                    </button>
+                </div>
+            </div> -->
+
+
+
+            <!-- <div class="card text-center" >
+                    <div class="card-header pull-left">
+                            <img src="images/indra_2003.jpg" width="100px" height="100px" alt="">
+                    </div>
+                    <div class="card-block">
+                      <h5 class="card-title">Indra</h5>
+                      <p class="card-text"> Description</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                    <div class="card-footer pull-right">
+                        footer
+                    </div>
+                  </div> -->
+
+
+
+                  
+            <div class="card text-center" >
+                    <div class="card-header pull-left">
+                        <img src="images/indra_2003.jpg" width="100px" height="100px" alt="">
+                
+                    </div>
+                    <div class="card-block">
+                        <h4 class="card-title">Title</h4>
+                        <p class="card-text">Description</p>
+                        <p>
+                            <i class="glyphicon glyphicon-star"></i>
+                            <i class="glyphicon glyphicon-star"></i>
+                            <i class="glyphicon glyphicon-star"></i>
+                            <i class="glyphicon glyphicon-star"></i>
+                            <i class="glyphicon glyphicon-star"></i>
+                        </p>
+                    </div>
+                    <div class="card-footer pull-right">
+                            <!-- <a href="#" class="btn btn-primary">BUTTON</a> -->
+                       <button type=button class="btn btn-sucess">
+                            <a href="https://www.youtube.com/watch?v=LorbrQ-8RUg">WatchNow</a>
+                        </button>
+                    </div>
+                </div>
+            </div><br/><br/>
+
+        <div class="container">
+               
+                <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+                <script type="text/javascript">
+                $(document).ready(function(){
+                    $("select").change(function(){
+                        $(this).find("option:selected").each(function(){
+                            var optionValue = $(this).attr("value");
+                            if(optionValue){
+                                $(".box").not("." + optionValue).hide();
+                                $("." + optionValue).show();
+                            } else{
+                                $(".box").hide();
+                            }
+                        });
+                    }).change();
+                });
+                </script>
+                </head>
+                <body>
+                    <div>
+                        <select class="select pull-right">
+                            <option>Choose language</option>
+                            <option value="kannada">kannada</option>
+                            <option value="telugu">telugu</option>
+                            <option value="english">english</option>
+                        </select>
+                    </div>
+                    <div class="kannada box"><img src="images/download.jpg"></div>
+                    <div class="telugu box"><img src="images/indra_2003.jpg"></div>
+                    <div class="english box"><img src="images/download (1).jpg"></div>
+        </div>
+        
+</body>
+</html>
